@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bgimage"
+android:orientation="vertical"
+tools:context="com.example.android.harrypotterquiz.MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Score: 0"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+
+
+    <TextView
+        android:id="@+id/question"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="125dp"
+    android:text="Hello World!"
+    android:textColor="#FFF"
+    android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/opt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option1"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="#CDC8C1"
+        android:padding="10dp"
+        android:layout_above="@+id/opt2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/opt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option2"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="#CDC8C1"
+        android:layout_above="@+id/opt3"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:id="@+id/opt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option3"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="#CDC8C1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
